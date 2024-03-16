@@ -9,7 +9,7 @@ export default function RootLayout({
     <>
       <Navbar />
       <main className="h-full">{children}</main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
