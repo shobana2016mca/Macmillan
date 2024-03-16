@@ -21,16 +21,42 @@ export default function Navbar() {
               className="hover:text-blue-500 transition-all duration-300">
               About
             </Link>
+
+            <Link
+              href={"/contact-us"}
+              className="hover:text-blue-500 transition-all duration-300">
+              Contact Us
+            </Link>
           </ul>
         </div>
 
         <div className="flex items-center gap-8">
-          <div className="hover:text-blue-500 transition-all duration-300 cursor-pointer">
-            LOGIN/REGISTER
+          <div className="hover:text-blue-500 flex items-center gap-2 transition-all duration-300 cursor-pointer">
+            <span>LOGIN/REGISTER</span>
+            <Image
+              src={
+                "https://demo.cmssuperheroes.com/themeforest/wp-recruitment/wp-content/themes/wp-recruitment/assets/images/icon-login.png"
+              }
+              alt="login"
+              height={30}
+              width={30}
+            />
           </div>
 
-          <div className="hover:text-blue-500 transition-all duration-300 cursor-pointer">
-            JOB BASKET
+          <div className="hover:text-blue-500 flex items-center gap-2 transition-all duration-300 cursor-pointer relative">
+            <span>JOB BASKET</span>
+            <Image
+              src={
+                "https://demo.cmssuperheroes.com/themeforest/wp-recruitment/wp-content/themes/wp-recruitment/assets/images/icon-cart.png"
+              }
+              alt="login"
+              height={30}
+              width={30}
+            />
+
+            <div className="flex items-center justify-center absolute border-2 rounded-full -top-3 -right-2 w-5 h-5 text-xs border-[#4e007a]">
+              0
+            </div>
           </div>
         </div>
       </div>
