@@ -1,4 +1,4 @@
-import { Footer, Navbar } from "@/components/layout";
+import { Footer, Header } from "@/components/layout";
 
 export default function RootLayout({
   children,
@@ -7,7 +7,7 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <Navbar />
+      <Header />
       <main className="min-h-full">{children}</main>
       <Footer />
     </>
