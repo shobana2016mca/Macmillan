@@ -1,11 +1,12 @@
 import { FaAngleLeft, FaAngleRight, FaLock } from "react-icons/fa6";
 import { FaGlobeAsia } from "react-icons/fa";
 import { CiClock2, CiMoneyBill } from "react-icons/ci";
+import { IoLocationOutline } from "react-icons/io5";
 
 export default function Test() {
   return (
     <>
-      <section className="mt-10 p-8 z-10">
+      <section className="mt-10 p-8 z-10 max-w-7xl mx-auto">
         <h1 className="text-5xl font-semibold">
           Welcome to an <span className="text-[#4e007a]">Award Winning</span>{" "}
           Recuritment Agency
@@ -46,7 +47,7 @@ export default function Test() {
         </div>
       </section>
 
-      <section className="p-4 mt-10 grid grid-cols-1 md:grid-cols-2 gap-4">
+      <section className="p-4 mt-10 grid grid-cols-1 max-w-7xl mx-auto md:grid-cols-2 gap-4">
         <div>
           <div className="border-b pb-2 flex items-center justify-between">
             <h1 className="text-xl font-semibold">Recent Jobs</h1>
@@ -154,7 +155,7 @@ export default function Test() {
             </div>
           </div>
           <div className="flex items-center justify-end mt-4">
-            <button className="px-6 py-2  hover:bg-[#4e007a] border-2 border-[#4e007a] transition-all duration-300 tracking-wide font-semibold hover:text-white rounded-md">
+            <button className="px-6 py-2  bg-[#4e007a] text-white transition-all duration-300 tracking-wide font-semibold rounded-md">
               Load More
             </button>
           </div>
@@ -208,11 +209,49 @@ export default function Test() {
           </div>
           <div className="flex items-center justify-end mt-4">
             <button className="px-6 py-2  hover:bg-[#4e007a] border-2 border-[#4e007a] transition-all duration-300 tracking-wide font-semibold hover:text-white rounded-md">
-              Load More
+              View More
             </button>
           </div>
         </div>
       </section>
+
+      <section className="p-4 mt-10 max-w-7xl mx-auto">
+        <div className="border-b pb-2 flex items-center justify-between">
+          <h1 className="text-xl font-semibold">Job of Interest</h1>
+
+          <div className="flex items-center gap-4">
+            <button className="bg-[#4e007a] rounded-[4px] p-2 text-white hover:bg-black transition-all duration-300">
+              <FaAngleLeft />
+            </button>
+            <button className="bg-[#4e007a] rounded-[4px] p-2 text-white hover:bg-black transition-all duration-300">
+              <FaAngleRight />
+            </button>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-4 gap-4">
+          <div className="bg-[#4e007a] p-4 w-full rounded-md text-white space-y-2">
+            <h1 className="text-xl">Sales & Marketing Coordin...</h1>
+            <h2 className="flex items-center gap-2">
+              <IoLocationOutline />
+              <span>Germany, Hanover</span>
+            </h2>
+
+            <h2>$31000</h2>
+          </div>
+          <div className="bg-[#4e007a] p-4 w-full rounded-md text-white space-y-2">
+            <h1 className="text-xl">Sales & Marketing Coordin...</h1>
+            <h2 className="flex items-center gap-2">
+              <IoLocationOutline />
+              <span>Germany, Hanover</span>
+            </h2>
+
+            <h2>$31000</h2>
+          </div>
+        </div>
+      </section>
+
+      <section className="p-4 bg-gray-100"></section>
     </>
   );
 }
