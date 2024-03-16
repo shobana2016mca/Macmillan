@@ -8,8 +8,8 @@ export default function RootLayout({
   return (
     <>
       <Navbar />
-      <main className="h-full">{children}</main>
-      {/* <Footer /> */}
+      <main className="min-h-full">{children}</main>
+      <Footer />
     </>
   );
 }

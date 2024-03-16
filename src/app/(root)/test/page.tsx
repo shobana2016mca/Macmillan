@@ -12,15 +12,20 @@ export default function Test() {
           Recuritment Agency
         </h1>
 
-        <div className="grid mt-10 grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid mt-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+          <p className="leading-7 text-sm text-[#212121] flex items-center justify-center">
+            Bushwick Schlitz. Est Shoreditch small batch, dolor Schlitz sapiente
+            twee stumptown ex. Duis Carles pickled, cornhole Thundercats{" "}
+            {`McSweeney's`} minim PBR vegan Tumblr irony. Kogi eu Thundercats,
+            sed scenester before they sold out et aesthetic.
+          </p>
+          <p className="leading-7 text-sm text-[#212121] flex items-center justify-center">
+            Bushwick Schlitz. Est Shoreditch small batch, dolor Schlitz sapiente
+            twee stumptown ex. Duis Carles pickled, cornhole Thundercats{" "}
+            {`McSweeney's`} minim PBR vegan Tumblr irony. Kogi eu Thundercats,
+            sed scenester before they sold out et aesthetic.
+          </p>
           <div className="space-y-4">
-            <p className="leading-7 text-sm text-[#212121]">
-              Bushwick Schlitz. Est Shoreditch small batch, dolor Schlitz
-              sapiente twee stumptown ex. Duis Carles pickled, cornhole
-              Thundercats {`McSweeney's`} minim PBR vegan Tumblr irony. Kogi eu
-              Thundercats, sed scenester before they sold out et aesthetic.
-            </p>
-
             <div className="bg-[url(https://demo.cmssuperheroes.com/themeforest/wp-recruitment/wp-content/uploads/2016/10/image-profile.jpg)] h-80 bg-cover relative rounded-md overflow-hidden font-medium">
               <div className=" absolute bottom-0 bg-[rgba(78_0_122/0.8)] w-full p-4 px-8 flex items-center justify-between text-white">
                 <h1>Create your profile</h1>
@@ -30,13 +35,6 @@ export default function Test() {
           </div>
 
           <div className="space-y-4">
-            <p className="leading-7 text-sm text-[#212121]">
-              Bushwick Schlitz. Est Shoreditch small batch, dolor Schlitz
-              sapiente twee stumptown ex. Duis Carles pickled, cornhole
-              Thundercats {`McSweeney's`} minim PBR vegan Tumblr irony. Kogi eu
-              Thundercats, sed scenester before they sold out et aesthetic.
-            </p>
-
             <div className="bg-[url(https://demo.cmssuperheroes.com/themeforest/wp-recruitment/wp-content/uploads/2016/10/image-CV.jpg)] h-80 bg-cover relative rounded-md overflow-hidden font-medium">
               <div className=" absolute bottom-0 bg-[rgba(78_0_122/0.8)] w-full p-4 px-8 flex items-center justify-between text-white">
                 <h1>Upload your CV</h1>
