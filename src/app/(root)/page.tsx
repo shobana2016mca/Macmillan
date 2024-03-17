@@ -4,6 +4,8 @@ import { FaAngleLeft, FaAngleRight, FaLock } from "react-icons/fa6";
 import { FaGlobeAsia } from "react-icons/fa";
 import { CiClock2, CiMoneyBill } from "react-icons/ci";
 import { IoLocationOutline } from "react-icons/io5";
+import FaqAccordian from "@/components/home/faqaccordian";
+import Recentjobs from "@/components/home/recentjobs";
 
 export default function Home() {
   return (
@@ -160,118 +162,7 @@ export default function Home() {
       </section>
 
       <section className="p-4 mt-10 grid grid-cols-1 max-w-7xl mx-auto md:grid-cols-2 gap-4">
-        <div>
-          <div className="border-b pb-2 flex items-center justify-between">
-            <h1 className="text-xl font-semibold">Recent Jobs</h1>
-
-            <div className="flex items-center gap-4">
-              <button className="bg-[#4e007a] rounded-[4px] p-2 text-white hover:bg-black transition-all duration-300">
-                <FaAngleLeft />
-              </button>
-              <button className="bg-[#4e007a] rounded-[4px] p-2 text-white hover:bg-black transition-all duration-300">
-                <FaAngleRight />
-              </button>
-            </div>
-          </div>
-          <div className="border mt-4">
-            <div className="p-4 hover:bg-gray-100 transition-all duration-300 border-b">
-              <h1 className="uppercase text-xl font-semibold mb-2">
-                Sales & Marketing Coordinator
-              </h1>
-
-              <div className="space-y-2 mt-4">
-                <h2 className="flex items-center gap-2 text-gray-800">
-                  <FaGlobeAsia />
-                  <span className="font-semibold">Germany, Hanover</span>
-                </h2>
-
-                <h2 className="flex items-center gap-2 text-gray-800">
-                  <FaLock className="text-red-500" />
-                  <span>Expired</span>
-                </h2>
-                <h2 className="flex items-center gap-2 text-gray-800">
-                  <CiMoneyBill />
-                  <span>$31000</span>
-                </h2>
-                <h2 className="flex items-center gap-2 text-gray-800">
-                  <CiClock2 className="text-green-600" />
-                  <span>Full Time</span>
-                </h2>
-              </div>
-
-              <div className="flex items-center justify-end">
-                <button className="uppercase border-2 px-4 py-2 rounded-md border-[#4e007a] hover:bg-[#4e007a] transition-all duration-300 hover:text-white font-semibold text-sm tracking-widest">
-                  View More
-                </button>
-              </div>
-            </div>
-
-            <div className="p-4 hover:bg-gray-100 transition-all duration-300 border-b">
-              <h1 className="uppercase text-xl font-semibold mb-2">
-                Sales & Marketing Coordinator
-              </h1>
-
-              <div className="space-y-2 mt-4">
-                <h2 className="flex items-center gap-2 text-gray-800">
-                  <FaGlobeAsia />
-                  <span className="font-semibold">Germany, Hanover</span>
-                </h2>
-
-                <h2 className="flex items-center gap-2 text-gray-800">
-                  <CiMoneyBill />
-                  <span>$27500</span>
-                </h2>
-                <h2 className="flex items-center gap-2 text-gray-800">
-                  <CiClock2 className="text-yellow-600" />
-                  <span>Part Time</span>
-                </h2>
-              </div>
-
-              <div className="flex items-center justify-end">
-                <button className="uppercase border-2 px-4 py-2 rounded-md border-[#4e007a] hover:bg-[#4e007a] transition-all duration-300 hover:text-white font-semibold text-sm tracking-widest">
-                  View More
-                </button>
-              </div>
-            </div>
-
-            <div className="p-4 hover:bg-gray-100 transition-all duration-300">
-              <h1 className="uppercase text-xl font-semibold mb-2">
-                Sales & Marketing Coordinator
-              </h1>
-
-              <div className="space-y-2 mt-4">
-                <h2 className="flex items-center gap-2 text-gray-800">
-                  <FaGlobeAsia />
-                  <span className="font-semibold">Germany, Hanover</span>
-                </h2>
-
-                <h2 className="flex items-center gap-2 text-gray-800">
-                  <FaLock className="text-red-500" />
-                  <span>Expired</span>
-                </h2>
-                <h2 className="flex items-center gap-2 text-gray-800">
-                  <CiMoneyBill />
-                  <span>$31000</span>
-                </h2>
-                <h2 className="flex items-center gap-2 text-gray-800">
-                  <CiClock2 className="text-yellow-600" />
-                  <span>Full Time</span>
-                </h2>
-              </div>
-
-              <div className="flex items-center justify-end">
-                <button className="uppercase border-2 px-4 py-2 rounded-md border-[#4e007a] hover:bg-[#4e007a] transition-all duration-300 hover:text-white font-semibold text-sm tracking-widest">
-                  View More
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="flex items-center justify-end mt-4">
-            <button className="px-6 py-2  bg-[#4e007a] text-white transition-all duration-300 tracking-wide font-semibold rounded-md">
-              Load More
-            </button>
-          </div>
-        </div>
+        <Recentjobs />
 
         <div>
           <div className="border-b pb-2 flex items-center justify-between">
@@ -374,9 +265,18 @@ export default function Home() {
 
       <section className=" bg-gray-100 mt-20">
         <div className="p-4 max-w-7xl mx-auto">
-          <h1 className="uppercase text-center text-xl font-medium">
-            Jobs by industry
-          </h1>
+          <div className="border-b pb-2 flex items-center justify-between">
+            <h1 className="text-xl font-semibold">Job of Category</h1>
+
+            <div className="flex items-center gap-4">
+              <button className="bg-[#4e007a] rounded-[4px] p-2 text-white hover:bg-black transition-all duration-300">
+                <FaAngleLeft />
+              </button>
+              <button className="bg-[#4e007a] rounded-[4px] p-2 text-white hover:bg-black transition-all duration-300">
+                <FaAngleRight />
+              </button>
+            </div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mt-8">
             <div className="bg-white border rounded-md p-4 flex gap-2">
@@ -425,6 +325,203 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="relative pt-[112px] min-h-[50vh] overflow-y-hidden pb-[90px] bg-[rgba(78,0,122,0.6)] xl:px-40">
+        <div className="z-20 grid grid-cols-1 md:grid-cols-2 relative place-items-center">
+          <div className="hidden md:block"></div>
+          <div className="text-white space-y-4">
+            <div className="space-y-2">
+              <h1 className="text-4xl font-bold">
+                Recruitment Agency for Mobile
+              </h1>
+
+              <h3>Continue your job hunt on the go.</h3>
+            </div>
+
+            <p>
+              Cosby sweater plaid shabby chic kitsch pour-over ex. Try-hard
+              fanny pack mumblecore cornhole cray scenester. Assumenda narwhal
+              occupy, Blue Bottle nihil culpa fingerstache. Meggings kogi vinyl
+              meh, food truck banh mi Etsy magna {`90's`} duis typewriter banjo
+              organic leggings Vice.
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-inherit absolute left-0 top-0 z-[1]"></div>
+        <div
+          className="h-[200%] absolute inset-0 bg-fixed z-[-1] bg-cover"
+          style={{
+            backgroundImage:
+              "url('https://demo.cmssuperheroes.com/themeforest/wp-recruitment/wp-content/uploads/2016/10/bg-home-parallax1.jpg')",
+            backgroundPosition: "50% 0",
+          }}></div>
+      </section>
+
+      <section className="max-w-7xl mx-auto my-10">
+        <h1 className="text-3xl text-center font-semibold text-[#4e007a]">
+          What Our Users Say
+        </h1>
+
+        <div className="my-10">
+          <div className="flex items-center justify-center">
+            <div className="w-[500px] relative">
+              <div>
+                <p className="text-sm text-center">
+                  Really good. I am completely blown away. Recruitment Agency
+                  Theme has got everything I need. Not able to tell you how
+                  happy I am with Recruitment Agency Theme.
+                </p>
+
+                <div className="flex items-center justify-center mt-8 flex-col gap-2">
+                  <div className="h-28 w-28 rounded-full overflow-hidden relative border-8 border-gray-200">
+                    <Image
+                      src={
+                        "https://demo.cmssuperheroes.com/themeforest/wp-recruitment/wp-content/uploads/2016/11/Testimonial_6-300x300.jpg"
+                      }
+                      alt="photo"
+                      fill
+                    />
+                  </div>
+                  <h1 className="text-xl">Eddy U</h1>
+                  <p className="text-sm text-gray-600">CEO Pariatur, Ltd</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-4 justify-center">
+          <button className="bg-[#4e007a] rounded-[4px] p-2 text-white hover:bg-black transition-all duration-300">
+            <FaAngleLeft />
+          </button>
+          <button className="bg-[#4e007a] rounded-[4px] p-2 text-white hover:bg-black transition-all duration-300">
+            <FaAngleRight />
+          </button>
+        </div>
+      </section>
+
+      <section className="max-w-7xl mx-auto my-10 bg-gray-100">
+        <div className="border-b pb-2 flex items-center justify-between p-10">
+          <h1 className="text-xl font-semibold">Latest News</h1>
+
+          <div className="flex items-center gap-4">
+            <button className="bg-[#4e007a] rounded-[4px] p-2 text-white hover:bg-black transition-all duration-300">
+              <FaAngleLeft />
+            </button>
+            <button className="bg-[#4e007a] rounded-[4px] p-2 text-white hover:bg-black transition-all duration-300">
+              <FaAngleRight />
+            </button>
+          </div>
+        </div>
+
+        <div className="my-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 p-10 gap-4">
+          <div className="bg-white border rounded-md">
+            <div className="p-4 flex items-center gap-4 font-semibold">
+              <h1 className="uppercase text-[#4e007a]">Featured</h1>
+              <h2 className="text-gray-600">October 20, 2016</h2>
+            </div>
+
+            <div className="w-full h-44 relative">
+              <Image
+                src={
+                  "https://demo.cmssuperheroes.com/themeforest/wp-recruitment/wp-content/uploads/2016/10/new1-658x221.jpg"
+                }
+                alt="img"
+                fill
+              />
+            </div>
+
+            <div className="p-4">
+              <h2 className="hover:text-[#4e007a] ">
+                The SEO/data analyst hybrid: Why you should advocate for
+                data-driven decision making in a content-driven field.
+              </h2>
+
+              <p className="text-sm mt-2 text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet,
+                quam!
+              </p>
+
+              <button className="uppercase text-[#4e007a] mt-2 font-semibold">
+                Read More
+              </button>
+            </div>
+          </div>
+          <div className="bg-white border rounded-md hidden md:block">
+            <div className="p-4 flex items-center gap-4 font-semibold">
+              <h1 className="uppercase text-[#4e007a]">Featured</h1>
+              <h2 className="text-gray-600">October 20, 2016</h2>
+            </div>
+
+            <div className="w-full h-44 relative">
+              <Image
+                src={
+                  "https://demo.cmssuperheroes.com/themeforest/wp-recruitment/wp-content/uploads/2016/10/new1-658x221.jpg"
+                }
+                alt="img"
+                fill
+              />
+            </div>
+
+            <div className="p-4">
+              <h2 className="hover:text-[#4e007a] ">
+                The SEO/data analyst hybrid: Why you should advocate for
+                data-driven decision making in a content-driven field.
+              </h2>
+
+              <p className="text-sm mt-2 text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet,
+                quam!
+              </p>
+
+              <button className="uppercase text-[#4e007a] mt-2 font-semibold">
+                Read More
+              </button>
+            </div>
+          </div>
+          <div className="bg-white border rounded-md hidden xl:block">
+            <div className="p-4 flex items-center gap-4 font-semibold">
+              <h1 className="uppercase text-[#4e007a]">Featured</h1>
+              <h2 className="text-gray-600">October 20, 2016</h2>
+            </div>
+
+            <div className="w-full h-44 relative">
+              <Image
+                src={
+                  "https://demo.cmssuperheroes.com/themeforest/wp-recruitment/wp-content/uploads/2016/10/new1-658x221.jpg"
+                }
+                alt="img"
+                fill
+              />
+            </div>
+
+            <div className="p-4">
+              <h2 className="hover:text-[#4e007a] ">
+                The SEO/data analyst hybrid: Why you should advocate for
+                data-driven decision making in a content-driven field.
+              </h2>
+
+              <p className="text-sm mt-2 text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet,
+                quam!
+              </p>
+
+              <button className="uppercase text-[#4e007a] mt-2 font-semibold">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#4e007a] py-20 text-white">
+        <h1 className="text-center font-semibold text-xl">
+          Frequently Asked Questions
+        </h1>
+
+        <FaqAccordian />
       </section>
     </>
   );
