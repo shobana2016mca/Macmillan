@@ -45,7 +45,7 @@ export default function FaqAccordian() {
 
   return (
     <div>
-      <div className="p-2 m-8">
+      <div className="p-2 md:m-8">
         {accordions.map((accordion: any, idx: number) => {
           return (
             <Accordion

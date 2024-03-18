@@ -14,28 +14,30 @@ export default function Home() {
         className="min-h-[130vh] w-full relative bg-fixed bg-no-repeat bg-cover"
         style={{
           backgroundImage: "url('/hero-bg.jpeg')",
-        }}>
+        }}
+      >
         <div className="flex items-center pt-20 h-[80%] flex-col gap-4 z-10">
           <>
-            <h1 className="font-bold text-2xl">
+            <h1 className="font-bold text-xl md:text-2xl text-center">
               Join us & Explore Thousands of Jobs
             </h1>
-            <p className="font-medium text-lg">
+            <p className="font-medium text-sm md:text-lg text-center ">
               Select your Industry and/or type your keyword, then click search
               to find your perfect job
             </p>
           </>
-          <div className="p-4 bg-[#9B74AC] rounded-md  grid grid-cols-2 gap-4">
+          <div className="p-4 bg-[#9B74AC] rounded-md  grid grid-cols-1 md:grid-cols-2 gap-4">
             <input
               type="text"
               placeholder="E.G Digital Designer"
-              className="py-2 px-4 rounded-md"
+              className="py-2 px-4 rounded-md w-full col-span-2 md:col-span-1"
             />
 
             <select
               name="location"
               id="location"
-              className="px-4 py-2 bg-white rounded-md">
+              className="px-4 py-2 bg-white rounded-md col-span-2 md:col-span-1"
+            >
               <option value="">Location</option>
               <option value="">Location 1</option>
               <option value="">Location 2</option>
@@ -44,32 +46,45 @@ export default function Home() {
             <select
               name="specialism"
               id="specialism"
-              className="px-4 py-2 bg-white rounded-md">
+              className="px-4 py-2 bg-white rounded-md col-span-2 md:col-span-1"
+            >
               <option value="">Location</option>
               <option value="">Location 1</option>
               <option value="">Location 2</option>
             </select>
 
-            <button className="flex items-center  gap-4 text-xl font-semibold bg-blue-500 px-4 py-2 rounded-md text-white">
+            <button className="flex items-center  gap-4 text-xl font-semibold bg-blue-500 px-4 py-2 rounded-md text-white col-span-2 md:col-span-1">
               <FaSearch />
               <span>SEARCH</span>
             </button>
 
-            <div className="border-t pt-4 col-span-2 text-white flex gap-4">
+            <div className="border-t pt-4 col-span-2 text-white flex gap-4 flex-col md:flex-row">
               <h1 className="font-medium">Quick Searches: </h1>
-              <span className="border-r pr-4 cursor-pointer">IT</span>
-              <span className="border-r pr-4 cursor-pointer">Engineer</span>
-              <span className="border-r pr-4 cursor-pointer">Car</span>
-              <span className="border-r pr-4 cursor-pointer">Engin</span>
-              <span className="cursor-pointer">Marketing</span>
+              <div className="flex items-center justify-between">
+                <span className="text-xs border-r pr-2 md:pr-4 cursor-pointer">
+                  IT
+                </span>
+                <span className="text-xs border-r pr-2 md:pr-0 md:px-4 cursor-pointer">
+                  Engineer
+                </span>
+                <span className="text-xs border-r pr-2 md:pr-0 md:px-4 cursor-pointer">
+                  Car
+                </span>
+                <span className="text-xs border-r pr-2 md:pr-0 md:px-4 cursor-pointer">
+                  Engine
+                </span>
+                <span className="text-xs cursor-pointer pl-2 md:pl-4">
+                  Marketing
+                </span>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="min-h-20 p-4 bg-gradient-to-b from-[#4E007A] to-[#3F0062] py-20 absolute bottom-0 w-full">
-          <ul className="flex items-center justify-center p-4 gap-4">
+        <div className="min-h-20 p-4 bg-gradient-to-b from-[#4E007A] to-[#3F0062] py-20 absolute bottom-[-250px] md:bottom-0 w-full">
+          <ul className="flex items-center justify-center flex-col md:flex-row p-4 gap-4">
             <li className="px-4 flex items-center justify-center flex-col gap-4 text-white text-lg">
-              <div className=" h-[90px] w-[90px] bg-[#370056] leading-[90px] text-center flex items-center justify-center rounded-full border-8 border-[#6f00ad] relative after:content-[''] after:h-[10px] after:w-[170px] after:bg-[#6f00ad] after:absolute after:top-1/2 after:left-[100%] ">
+              <div className=" h-[90px] w-[90px] bg-[#370056] leading-[90px] text-center flex items-center justify-center rounded-full border-8 border-[#6f00ad] relative after:content-[''] after:h-[10px] after:w-[170px] after:bg-[#6f00ad] after:absolute after:top-1/2 after:left-[100%] after:hidden after:md:block ">
                 <div className="relative h-[55px] w-[55px] flex items-center justify-center overflow-hidden">
                   <Image
                     fill
@@ -86,7 +101,7 @@ export default function Home() {
             </li>
 
             <li className="px-4 flex items-center justify-center flex-col gap-4 text-white text-lg">
-              <div className=" h-[90px] w-[90px] bg-[#370056] leading-[90px] text-center flex items-center justify-center rounded-full border-8 border-[#6f00ad] relative after:content-[''] after:h-[10px] after:w-[150px] after:bg-[#6f00ad] after:absolute after:top-1/2 after:left-[100%] ">
+              <div className=" h-[90px] w-[90px] bg-[#370056] leading-[90px] text-center flex items-center justify-center rounded-full border-8 border-[#6f00ad] relative after:content-[''] after:h-[10px] after:w-[150px] after:bg-[#6f00ad] after:absolute after:top-1/2 after:left-[100%]  after:hidden after:md:block">
                 <div className="relative h-[55px] w-[55px] flex items-center justify-center overflow-hidden">
                   <Image
                     fill
@@ -122,7 +137,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-10 p-8 z-10 max-w-7xl mx-auto">
+      <section className="mt-[15rem] md:mt-10 p-8 z-10 max-w-7xl mx-auto">
         <h1 className="text-5xl font-semibold">
           Welcome to an <span className="text-[#4e007a]">Award Winning</span>{" "}
           Recuritment Agency
@@ -356,7 +371,8 @@ export default function Home() {
             backgroundImage:
               "url('https://demo.cmssuperheroes.com/themeforest/wp-recruitment/wp-content/uploads/2016/10/bg-home-parallax1.jpg')",
             backgroundPosition: "50% 0",
-          }}></div>
+          }}
+        ></div>
       </section>
 
       <section className="max-w-7xl mx-auto my-10">
@@ -416,7 +432,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="my-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 p-10 gap-4">
+        <div className="my-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 p-4 md:p-10 gap-4">
           <div className="bg-white border rounded-md">
             <div className="p-4 flex items-center gap-4 font-semibold">
               <h1 className="uppercase text-[#4e007a]">Featured</h1>
