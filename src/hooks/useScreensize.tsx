@@ -17,7 +17,7 @@ export const useScreensize = () => {
     };
   }, []);
 
-  const isMobile = width <= 768;
+  const isMobile = width <= 600;
   const isTablet = width <= 1024;
   const isDesktop = width > 1024;
 
