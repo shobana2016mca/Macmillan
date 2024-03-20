@@ -55,7 +55,7 @@ export default function AboutUs() {
   <Image src={"/MapsAboutUs.jpg"}  height={800} width={800} alt="img"/>
   </div>
 </div>
-<div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-10">
+{/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-10">
   <div className="flex flex-col sm:flex-row">
   <div className="bg-gray-200 p-4 w-20">Column 1</div>
   <div className="bg-gray-200 p-4 w-80">Column 2 Column 2 Column 2 </div>
@@ -68,32 +68,91 @@ export default function AboutUs() {
   <div className="bg-gray-200 p-4 w-30">Column 1</div>
   <div className="bg-gray-200 p-4 w-70">Column 2 Column 2 Column 2</div>
 </div>  
-</div>
-<div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-10">
-  <div className="bg-gray-200 p-4"><div className="flex items-center bg-gray-200 rounded-lg p-4">
-  <div className="mr-4">
-  <Image src={"/MapsAboutUs.jpg"}  height={80} width={80} alt="img"/>
+</div> */}
+<div className="grid grid-cols-1 md:grid-cols-3 p-10">
+  <div className="bg-white-200 p-4 border-r border-gray"><div className="flex items-center rounded-lg p-2">
+  <div className="mr-2">
+  <Image src={"/About-icon-6.png"}  height={200} width={200} alt="img"/>
   </div>
   <div>
-    <p className="text-lg font-semibold">Your Text Here</p>
-    <p className="text-sm text-gray-500">Additional Description</p>
+    <p className="text-lg font-semibold">
+JOB POSTING</p>
+    <p className="text-sm text-gray-500">Pellentesque posuere in erat sed tempor. Mauris lectus lorem, vehicula in sapien id, mattis hendrerit elit.</p>
   </div>
-</div></div>
-  <div className="bg-gray-200 p-4">Column 2</div>
-  <div className="bg-gray-200 p-4">Column 3</div>
+</div>
+</div>
+<div className="bg-white-200 p-4 border-r border-gray"><div className="flex items-center rounded-lg p-2  border-gray-300 shadow-gray-500">
+  <div className="mr-2">
+  <Image src={"/About-icon-5.png"}  height={200} width={200} alt="img"/>
+  </div>
+  <div>
+    <p className="text-lg font-semibold">
+JOB APPLICATION</p>
+    <p className="text-sm text-gray-500">Pellentesque posuere in erat sed tempor. Mauris lectus lorem, vehicula in sapien id, mattis hendrerit elit.</p>
+  </div>
+</div>
+</div>
+<div className="bg-white-200 p-4"><div className="flex items-center rounded-lg p-2  border-gray-300 shadow-gray-500">
+  <div className="mr-2">
+  <Image src={"/About-icon-4.png"}  height={200} width={200} alt="img"/>
+  </div>
+  <div>
+    <p className="text-lg font-semibold">
+CV UPLOAD</p>
+    <p className="text-sm text-gray-500">Pellentesque posuere in erat sed tempor. Mauris lectus lorem, vehicula in sapien id, mattis hendrerit elit.</p>
   
+  </div>
+</div>
+</div>
+<div className="bg-white-200 p-4 border-r border-gray"><div className="flex items-center rounded-lg p-2  border-gray-300 shadow-gray-500">
+  <div className="mr-2">
+  <Image src={"/About-icon-3.png"}  height={200} width={200} alt="img"/>
+  </div>
+  <div>
+    <p className="text-lg font-semibold">
+PROFILES</p>
+    <p className="text-sm text-gray-500">Pellentesque posuere in erat sed tempor. Mauris lectus lorem, vehicula in sapien id, mattis hendrerit elit.</p>
+  
+  </div>
+</div>
+</div>
+<div className="bg-white-200 p-4 border-r border-gray"><div className="flex items-center rounded-lg p-2  border-gray-300 shadow-gray-500">
+  <div className="mr-2">
+  <Image src={"/About-icon-4.png"}  height={200} width={200} alt="img"/>
+  </div>
+  <div>
+    <p className="text-lg font-semibold">FIND JOBS</p>
+    <p className="text-sm text-gray-500">Pellentesque posuere in erat sed tempor. Mauris lectus lorem, vehicula in sapien id, mattis hendrerit elit.</p>
+  
+  </div>
+</div>
+</div>
+<div className="bg-white-200 p-4"><div className="flex items-center rounded-lg p-2  border-gray-300 shadow-gray-500">
+  <div className="mr-2">
+  <Image src={"/About-icon-1.png"}  height={200} width={200} alt="img"/>
+  </div>
+  <div>
+    <p className="text-lg font-semibold">INDUSTRY SEARCH</p>
+    <p className="text-sm text-gray-500">Pellentesque posuere in erat sed tempor. Mauris lectus lorem, vehicula in sapien id, mattis hendrerit elit.</p>
+  
+  </div>
+</div>
+</div>
+  {/* <div className="bg-gray-200 p-4">Column 2</div>
+  <div className="bg-gray-200 p-4">Column 3</div>
+   */}
   
 </div>
 
-<div className="flex items-center bg-gray-200 rounded-lg p-4">
+{/* <div className="flex items-center bg-gray-200 rounded-lg p-4 border border-gray-300 shadow-gray-500">
   <div className="mr-4">
-  <Image src={"/MapsAboutUs.jpg"}  height={80} width={80} alt="img"/>
+  <Image src={"/About-Icon-1.png"}  height={80} width={80} alt="img"/>
   </div>
   <div>
     <p className="text-lg font-semibold">Your Text Here</p>
     <p className="text-sm text-gray-500">Additional Description</p>
   </div>
-</div>
+</div> */}
 
 
     </div>
