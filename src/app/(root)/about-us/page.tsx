@@ -72,7 +72,7 @@ export default function AboutUs() {
 <div className="grid grid-cols-1 md:grid-cols-3 p-10">
   <div className="bg-white-200 p-4 border-r border-gray"><div className="flex items-center rounded-lg p-2">
   <div className="mr-2">
-  <Image src={"/About-icon-6.png"}  height={200} width={200} alt="img"/>
+  <Image src={"/About-Icon-6.png"}  height={200} width={200} alt="img"/>
   </div>
   <div>
     <p className="text-lg font-semibold">
@@ -83,7 +83,7 @@ JOB POSTING</p>
 </div>
 <div className="bg-white-200 p-4 border-r border-gray"><div className="flex items-center rounded-lg p-2  border-gray-300 shadow-gray-500">
   <div className="mr-2">
-  <Image src={"/About-icon-5.png"}  height={200} width={200} alt="img"/>
+  <Image src={"/About-Icon-5.png"}  height={200} width={200} alt="img"/>
   </div>
   <div>
     <p className="text-lg font-semibold">
@@ -94,7 +94,7 @@ JOB APPLICATION</p>
 </div>
 <div className="bg-white-200 p-4"><div className="flex items-center rounded-lg p-2  border-gray-300 shadow-gray-500">
   <div className="mr-2">
-  <Image src={"/About-icon-4.png"}  height={200} width={200} alt="img"/>
+  <Image src={"/About-Icon-4.png"}  height={200} width={200} alt="img"/>
   </div>
   <div>
     <p className="text-lg font-semibold">
@@ -106,7 +106,7 @@ CV UPLOAD</p>
 </div>
 <div className="bg-white-200 p-4 border-r border-gray"><div className="flex items-center rounded-lg p-2  border-gray-300 shadow-gray-500">
   <div className="mr-2">
-  <Image src={"/About-icon-3.png"}  height={200} width={200} alt="img"/>
+  <Image src={"/About-Icon-3.png"}  height={200} width={200} alt="img"/>
   </div>
   <div>
     <p className="text-lg font-semibold">
@@ -118,7 +118,7 @@ PROFILES</p>
 </div>
 <div className="bg-white-200 p-4 border-r border-gray"><div className="flex items-center rounded-lg p-2  border-gray-300 shadow-gray-500">
   <div className="mr-2">
-  <Image src={"/About-icon-4.png"}  height={200} width={200} alt="img"/>
+  <Image src={"/About-Icon-4.png"}  height={200} width={200} alt="img"/>
   </div>
   <div>
     <p className="text-lg font-semibold">FIND JOBS</p>
@@ -129,7 +129,7 @@ PROFILES</p>
 </div>
 <div className="bg-white-200 p-4"><div className="flex items-center rounded-lg p-2  border-gray-300 shadow-gray-500">
   <div className="mr-2">
-  <Image src={"/About-icon-1.png"}  height={200} width={200} alt="img"/>
+  <Image src={"/About-Icon-1.png"}  height={200} width={200} alt="img"/>
   </div>
   <div>
     <p className="text-lg font-semibold">INDUSTRY SEARCH</p>
