@@ -28,12 +28,12 @@ export default function Navbar() {
     e.preventDefault();
     // Form validation logic here
     if (!username.trim()) {
-      setErrors((prevErrors) => ({
+      setErrors((prevErrors:any) => ({
         ...prevErrors,
         username: "Username is required",
       }));
     } else if (!password.trim()) {
-      setErrors((prevErrors) => ({
+      setErrors((prevErrors:any) => ({
         ...prevErrors,
         password: "Password is required",
       }));
@@ -186,7 +186,7 @@ export default function Navbar() {
                 <div className="flex items-center justify-between">
                 <div className="flex items-center">
   <input type="checkbox" id="checkbox" className="form-checkbox h-5 w-5 text-blue-600"/>
-  <label for="checkbox" className="ml-2 text-gray-700">Remember Me</label>
+  <label className="ml-2 text-gray-700">Remember Me</label>
 </div>
         
                   <a
