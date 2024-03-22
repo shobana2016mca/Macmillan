@@ -13,20 +13,46 @@ export default function Navbar() {
 
   const [open, setOpen] = useState(false);
   const [openLogin, setOpenLogin] = useState(false);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [errors, setErrors] = useState({});
 
   const toggleOpen = () => {
     setOpen(!open);
   };
+
   const toggleOpenLogin = () => {
     setOpenLogin(!openLogin);
   };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Form validation logic here
+    if (!username.trim()) {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        username: "Username is required",
+      }));
+    } else if (!password.trim()) {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        password: "Password is required",
+      }));
+    } else {
+      // Form submission logic here
+      console.log("Form submitted:", { username, password });
+      // Clear form fields and errors after successful submission
+      setUsername("");
+      setPassword("");
+      setErrors({});
+    }
+  };
 
   return (
-    <nav className="border-b relative sticky top-0 bg-white z-50">
+    <nav className="border-2 relative sticky top-0 bg-white z-50">
       <div className="md:mx-20 flex items-center justify-between">
         <div className="flex items-center gap-12 justify-between md:justify-normal w-full">
           <Link href={"/"}>
-            <Image src={"/logo.jpeg"} alt="logo" height={80} width={100} />
+            <Image src={"/logo.jpeg"} alt="logo" height={80} width={110} />
           </Link>
 
           {!isMobile && (
@@ -71,9 +97,133 @@ export default function Navbar() {
             </button>
 
             {openLogin ? (
-              <div className="absolute top-20 right-0 w-60 min-h-40 bg-white p-4 shadow">
-                Content here hwysdksdhf
-              </div>
+              <div className="absolute top-20 right-10 w-80 min-h-40 bg-white p-4 shadow rounded">
+               <h2 className="text-lg text-bold text-center font-extrabold text-[#4e007a]">Login Using Account</h2>
+               {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+  
+    
+    <div className="flex gap-2 w-80">
+  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold p-2 rounded w-full">candidate</button>
+  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold  p-2 rounded w-full">candidate</button>
+  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold p-2 rounded w-full">candidate</button>
+</div> 
+  
+</div> */}
+
+<div className="flex flex-wrap pt-6">
+<div className="w-full sm:w-1/2 md:w-1/3 px-2 mb-2 "> <button className="bg-[#ebeef0] hover:text-purple-700 text-[#bfc0c0] rounded border-2 w-full text-sm">Candidate</button>
+</div> 
+<div className="w-full sm:w-1/2 md:w-1/3 px-2 mb-2 "> <button className="bg-[#ebeef0] hover:text-purple-700 text-[#bfc0c0] rounded border-2 w-full text-sm">Employeer</button>
+</div> <div className="w-full sm:w-1/2 md:w-1/3 px-2 mb-2"> <button className="bg-[#ebeef0] hover:text-purple-700 text-[#bfc0c0] rounded border-2 w-full text-sm">Admin</button>
+</div>
+</div>
+      <h3 className="text-lg text-center font-extrabold text-[#4e007a] mt-4 mb-4">Existing User Login Below</h3>
+
+      <div><div className="flex justify-center items-center">
+  {/* <form className="w-full max-w-xs">
+    <div className="mb-4">
+      
+      <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username"/>
+    </div>
+    <div className="mb-6">
+      
+      <input className="shadow appearance-none border border-red rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Password"/>
+      <p className="text-red-500 text-xs italic">Please choose a password.</p>
+    </div>
+    <div className="flex items-center justify-between">
+      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+        Sign In
+      </button>
+      <a className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
+        Forgot Password?
+      </a>
+    </div>
+    <div className="flex items-center justify-between">
+      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+        Sign In
+      </button>
+      
+      <a className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
+        Forgot Password?
+      </a>
+    </div>
+  </form> */}
+  <form className="w-full max-w-xs" onSubmit={handleSubmit}>
+                <div className="mb-4">
+                  <input
+                    className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
+                      errors.username ? "border-red-500" : ""
+                    }`}
+                    id="username"
+                    type="text"
+                    placeholder="Username"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                  />
+                  {errors.username && (
+                    <p className="text-red-500 text-xs italic">
+                      {errors.username}
+                    </p>
+                  )}
+                </div>
+                <div className="mb-6">
+                  <input
+                    className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
+                      errors.password ? "border-red-500" : ""
+                    }`}
+                    id="password"
+                    type="password"
+                    placeholder="Password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                  />
+                  {errors.password && (
+                    <p className="text-red-500 text-xs italic">
+                      {errors.password}
+                    </p>
+                  )}
+                </div>
+                <div className="flex items-center justify-between">
+                <div className="flex items-center">
+  <input type="checkbox" id="checkbox" className="form-checkbox h-5 w-5 text-blue-600"/>
+  <label for="checkbox" className="ml-2 text-gray-700">Remember Me</label>
+</div>
+        
+                  <a
+                    className="inline-block align-baseline  text-sm text-blue-500 hover:text-blue-800"
+                    href="#"
+                  >
+                    Forgot Password?
+                  </a>
+                </div>
+                <div className="flex items-center justify-between mt-10">
+                  <button
+                    className="bg-[#4e007a] hover:bg-[#000000] text-white font-bold py-2 px-10 rounded focus:outline-none focus:shadow-outline"
+                    type="submit"
+                  >
+                    LOGIN
+                  </button>
+                  <button
+                    className="border-2 border-[#4e007a] hover:bg-[#000000] hover:text-white text-[#4e007a] font-bold py-2 px-6 rounded inline-flex items-center"
+                    type="submit"
+                  >
+                    REGISTER
+                  </button>
+                 
+                </div>
+                
+                <div>
+           
+        </div>
+    
+        
+              </form>
+</div>
+</div>
+</div>
+
+
+
             ) : null}
           </div>
 
