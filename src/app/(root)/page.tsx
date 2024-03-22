@@ -6,6 +6,8 @@ import { CiClock2, CiMoneyBill } from "react-icons/ci";
 import { IoLocationOutline } from "react-icons/io5";
 import FaqAccordian from "@/components/home/faqaccordian";
 import Recentjobs from "@/components/home/recentjobs";
+import Testimonial from "@/components/home/testimonial";
+import LatestNews from "@/components/home/latestnews";
 
 export default function Home() {
   return (
@@ -14,8 +16,7 @@ export default function Home() {
         className="min-h-[130vh] w-full relative bg-fixed bg-no-repeat bg-cover"
         style={{
           backgroundImage: "url('/hero-bg.jpeg')",
-        }}
-      >
+        }}>
         <div className="flex items-center pt-20 h-[80%] flex-col gap-4 z-10">
           <>
             <h1 className="font-bold text-xl md:text-2xl text-center">
@@ -36,8 +37,7 @@ export default function Home() {
             <select
               name="location"
               id="location"
-              className="px-4 py-2 bg-white rounded-md col-span-2 md:col-span-1"
-            >
+              className="px-4 py-2 bg-white rounded-md col-span-2 md:col-span-1">
               <option value="">Location</option>
               <option value="">Location 1</option>
               <option value="">Location 2</option>
@@ -46,8 +46,7 @@ export default function Home() {
             <select
               name="specialism"
               id="specialism"
-              className="px-4 py-2 bg-white rounded-md col-span-2 md:col-span-1"
-            >
+              className="px-4 py-2 bg-white rounded-md col-span-2 md:col-span-1">
               <option value="">Location</option>
               <option value="">Location 1</option>
               <option value="">Location 2</option>
@@ -371,8 +370,7 @@ export default function Home() {
             backgroundImage:
               "url('https://demo.cmssuperheroes.com/themeforest/wp-recruitment/wp-content/uploads/2016/10/bg-home-parallax1.jpg')",
             backgroundPosition: "50% 0",
-          }}
-        ></div>
+          }}></div>
       </section>
 
       <section className="max-w-7xl mx-auto my-10">
@@ -380,156 +378,11 @@ export default function Home() {
           What Our Users Say
         </h1>
 
-        <div className="my-10">
-          <div className="flex items-center justify-center">
-            <div className="w-[500px] relative">
-              <div>
-                <p className="text-sm text-center">
-                  Really good. I am completely blown away. Recruitment Agency
-                  Theme has got everything I need. Not able to tell you how
-                  happy I am with Recruitment Agency Theme.
-                </p>
-
-                <div className="flex items-center justify-center mt-8 flex-col gap-2">
-                  <div className="h-28 w-28 rounded-full overflow-hidden relative border-8 border-gray-200">
-                    <Image
-                      src={
-                        "https://demo.cmssuperheroes.com/themeforest/wp-recruitment/wp-content/uploads/2016/11/Testimonial_6-300x300.jpg"
-                      }
-                      alt="photo"
-                      fill
-                    />
-                  </div>
-                  <h1 className="text-xl">Eddy U</h1>
-                  <p className="text-sm text-gray-600">CEO Pariatur, Ltd</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-4 justify-center">
-          <button className="bg-[#4e007a] rounded-[4px] p-2 text-white hover:bg-black transition-all duration-300">
-            <FaAngleLeft />
-          </button>
-          <button className="bg-[#4e007a] rounded-[4px] p-2 text-white hover:bg-black transition-all duration-300">
-            <FaAngleRight />
-          </button>
-        </div>
+        <Testimonial />
       </section>
 
       <section className="max-w-7xl mx-auto my-10 bg-gray-100">
-        <div className="border-b pb-2 flex items-center justify-between p-10">
-          <h1 className="text-xl font-semibold">Latest News</h1>
-
-          <div className="flex items-center gap-4">
-            <button className="bg-[#4e007a] rounded-[4px] p-2 text-white hover:bg-black transition-all duration-300">
-              <FaAngleLeft />
-            </button>
-            <button className="bg-[#4e007a] rounded-[4px] p-2 text-white hover:bg-black transition-all duration-300">
-              <FaAngleRight />
-            </button>
-          </div>
-        </div>
-
-        <div className="my-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 p-4 md:p-10 gap-4">
-          <div className="bg-white border rounded-md">
-            <div className="p-4 flex items-center gap-4 font-semibold">
-              <h1 className="uppercase text-[#4e007a]">Featured</h1>
-              <h2 className="text-gray-600">October 20, 2016</h2>
-            </div>
-
-            <div className="w-full h-44 relative">
-              <Image
-                src={
-                  "https://demo.cmssuperheroes.com/themeforest/wp-recruitment/wp-content/uploads/2016/10/new1-658x221.jpg"
-                }
-                alt="img"
-                fill
-              />
-            </div>
-
-            <div className="p-4">
-              <h2 className="hover:text-[#4e007a] ">
-                The SEO/data analyst hybrid: Why you should advocate for
-                data-driven decision making in a content-driven field.
-              </h2>
-
-              <p className="text-sm mt-2 text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet,
-                quam!
-              </p>
-
-              <button className="uppercase text-[#4e007a] mt-2 font-semibold">
-                Read More
-              </button>
-            </div>
-          </div>
-          <div className="bg-white border rounded-md hidden md:block">
-            <div className="p-4 flex items-center gap-4 font-semibold">
-              <h1 className="uppercase text-[#4e007a]">Featured</h1>
-              <h2 className="text-gray-600">October 20, 2016</h2>
-            </div>
-
-            <div className="w-full h-44 relative">
-              <Image
-                src={
-                  "https://demo.cmssuperheroes.com/themeforest/wp-recruitment/wp-content/uploads/2016/10/new1-658x221.jpg"
-                }
-                alt="img"
-                fill
-              />
-            </div>
-
-            <div className="p-4">
-              <h2 className="hover:text-[#4e007a] ">
-                The SEO/data analyst hybrid: Why you should advocate for
-                data-driven decision making in a content-driven field.
-              </h2>
-
-              <p className="text-sm mt-2 text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet,
-                quam!
-              </p>
-
-              <button className="uppercase text-[#4e007a] mt-2 font-semibold">
-                Read More
-              </button>
-            </div>
-          </div>
-          <div className="bg-white border rounded-md hidden xl:block">
-            <div className="p-4 flex items-center gap-4 font-semibold">
-              <h1 className="uppercase text-[#4e007a]">Featured</h1>
-              <h2 className="text-gray-600">October 20, 2016</h2>
-            </div>
-
-            <div className="w-full h-44 relative">
-              <Image
-                src={
-                  "https://demo.cmssuperheroes.com/themeforest/wp-recruitment/wp-content/uploads/2016/10/new1-658x221.jpg"
-                }
-                alt="img"
-                fill
-              />
-            </div>
-
-            <div className="p-4">
-              <h2 className="hover:text-[#4e007a] ">
-                The SEO/data analyst hybrid: Why you should advocate for
-                data-driven decision making in a content-driven field.
-              </h2>
-
-              <p className="text-sm mt-2 text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet,
-                quam!
-              </p>
-
-              <button className="uppercase text-[#4e007a] mt-2 font-semibold">
-                Read More
-              </button>
-            </div>
-          </div>
-        </div>
+        <LatestNews />
       </section>
 
       <section className="bg-[#4e007a] py-20 text-white">
