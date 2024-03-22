@@ -12,17 +12,13 @@ export default function Navbar() {
   const { isMobile } = useScreensize();
 
   const [open, setOpen] = useState(false);
-  const [openLogin, setOpenLogin] = useState(false);
 
   const toggleOpen = () => {
     setOpen(!open);
   };
-  const toggleOpenLogin = () => {
-    setOpenLogin(!openLogin);
-  };
 
   return (
-    <nav className="border-b relative sticky top-0 bg-white z-50">
+    <nav className="border-b sticky top-0 bg-white z-50">
       <div className="md:mx-20 flex items-center justify-between">
         <div className="flex items-center gap-12 justify-between md:justify-normal w-full">
           <Link href={"/"}>
@@ -33,18 +29,21 @@ export default function Navbar() {
             <ul className="flex items-center gap-8">
               <Link
                 href={"/"}
-                className="hover:text-blue-500 transition-all duration-300">
+                className="hover:text-blue-500 transition-all duration-300"
+              >
                 Home
               </Link>
               <Link
                 href={"/about-us"}
-                className="hover:text-blue-500 transition-all duration-300">
+                className="hover:text-blue-500 transition-all duration-300"
+              >
                 About
               </Link>
 
               <Link
                 href={"/contact-us"}
-                className="hover:text-blue-500 transition-all duration-300">
+                className="hover:text-blue-500 transition-all duration-300"
+              >
                 Contact Us
               </Link>
             </ul>
@@ -52,29 +51,21 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-8 w-full justify-end flex-grow pr-8 md:pr-0">
-          <div className=" flex items-center gap-2 transition-all duration-300 cursor-pointer">
+          <div className="hover:text-blue-500 flex items-center gap-2 transition-all duration-300 cursor-pointer">
             {isMobile && (
-              <button className="mr-2 hover:text-blue-500" onClick={toggleOpen}>
+              <button className="mr-2" onClick={toggleOpen}>
                 {open ? <IoMdClose size={28} /> : <FiMenu size={28} />}
               </button>
             )}
             {!isMobile && <span className="text-sm">LOGIN/REGISTER</span>}
-            <button onClick={toggleOpenLogin}>
-              <Image
-                src={
-                  "https://demo.cmssuperheroes.com/themeforest/wp-recruitment/wp-content/themes/wp-recruitment/assets/images/icon-login.png"
-                }
-                alt="login"
-                height={30}
-                width={30}
-              />
-            </button>
-
-            {openLogin ? (
-              <div className="absolute top-20 right-0 w-60 min-h-40 bg-white p-4 shadow">
-                Content here hwysdksdhf
-              </div>
-            ) : null}
+            <Image
+              src={
+                "https://demo.cmssuperheroes.com/themeforest/wp-recruitment/wp-content/themes/wp-recruitment/assets/images/icon-login.png"
+              }
+              alt="login"
+              height={30}
+              width={30}
+            />
           </div>
 
           <div className="hover:text-blue-500 flex items-center gap-2 transition-all duration-300 cursor-pointer relative">
