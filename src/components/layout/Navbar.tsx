@@ -15,7 +15,7 @@ export default function Navbar() {
   const [openLogin, setOpenLogin] = useState(false);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState<any>({});
 
   const toggleOpen = () => {
     setOpen(!open);
@@ -24,7 +24,7 @@ export default function Navbar() {
   const toggleOpenLogin = () => {
     setOpenLogin(!openLogin);
   };
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
     // Form validation logic here
     if (!username.trim()) {
