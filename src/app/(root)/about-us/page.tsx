@@ -69,8 +69,8 @@ export default function AboutUs() {
   <div className="bg-gray-200 p-4 w-70">Column 2 Column 2 Column 2</div>
 </div>  
 </div> */}
-<div className="grid grid-cols-1 md:grid-cols-3 p-10">
-  <div className="bg-white-200 p-4 border-r border-gray"><div className="flex items-center rounded-lg p-2">
+<div className="grid grid-cols-1 md:grid-cols-3 p-6 md:p-10">
+  <div className="bg-white-200 md:p-4 md:border-r border-gray"><div className="flex items-center rounded-lg p-2">
   <div className="mr-2">
   <Image src={"/About-Icon-6.png"}  height={200} width={200} alt="img"/>
   </div>
@@ -116,7 +116,7 @@ PROFILES</p>
   </div>
 </div>
 </div>
-<div className="bg-white-200 p-4 border-r border-gray"><div className="flex items-center rounded-lg p-2  border-gray-300 shadow-gray-500">
+<div className="bg-white-200 p-4 md:border-r border-gray"><div className="flex items-center rounded-lg p-2  border-gray-300 shadow-gray-500">
   <div className="mr-2">
   <Image src={"/About-Icon-4.png"}  height={200} width={200} alt="img"/>
   </div>

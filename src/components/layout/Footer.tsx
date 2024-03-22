@@ -92,8 +92,8 @@ export default function Footer() {
           <div className="sm:w-40 sm:mt-0 mt-8 h-auto">
             <div className="text-[#4e007a] font-bold mb-2 ">
               <h2>
-                Recruitment{" "}
-                <span className="text-black font-bold ">Agency</span>
+                Macmillan{" "}
+                <span className="text-black font-bold ">HR</span>
               </h2>
             </div>
           </div>

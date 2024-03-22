@@ -22,7 +22,7 @@ export default function Navbar() {
       <div className="md:mx-20 flex items-center justify-between">
         <div className="flex items-center gap-12 justify-between md:justify-normal w-full">
           <Link href={"/"}>
-            <Image src={"/logo.jpeg"} alt="logo" height={80} width={80} />
+            <Image src={"/logo.jpeg"} alt="logo" height={80} width={100} />
           </Link>
 
           {!isMobile && (
