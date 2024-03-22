@@ -47,12 +47,14 @@ export default function AboutUs() {
             Helping people all around the world bag their dream job.
           </h2>
           <p className="text-base md:text-sm lg:text-sm mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-            odio. Praesent libero.
+          Established in January 2024, MacMillan HR emerges as a premier recruitment company in South India, extending its services to key locations across the nation, especially focusing on major metro cities. Led by our founder, R. Dharani, whose extensive industry experience guides our journey, we are a vibrant team of HR recruiters and business management professionals.
+          At MacMillan HR, we pride ourselves on our comprehensive HR recruitment services, catering to diverse clients nationwide. With our robust job portals and personalized assistance, we connect top talent with leading organizations, ensuring a perfect match for both candidates and companies.
           </p>
           <p className="text-base md:text-sm lg:text-sm mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-            odio. Praesent libero.
+          Our mission is simple yet profound: to provide the best services at affordable costs. We understand the importance of efficient recruitment processes, and our dedicated team strives to save both time and money for our clients and candidates alike, all while upholding our core values of integrity, transparency, and excellence.
+
+Whether you're a job seeker looking for your next opportunity or a company seeking top-tier talent, MacMillan HR is here to partner with you every step of the way. Experience the difference with MacMillan HR, where quality meets affordability, and success is a shared journey.
+
           </p>
         </div>
         <div className="w-full md:w-1/2 p-4">

@@ -7,26 +7,29 @@ export default function FaqAccordian() {
   const [accordions, setAccordion] = useState([
     {
       key: 1,
-      title: "How do I create an account?",
-      data: `Cosby sweater plaid shabby chic kitsch pour-over ex. Try-hard fanny pack mumblecore cornhole cray scenester. Assumenda narwhal occupy, Blue Bottle nihil culpa fingerstache. Meggings kogi vinyl meh, food truck banh mi Etsy magna 90’s duis typewriter banjo organic leggings Vice.`,
+      title: "How does your recruitment process work?",
+      data: ` - Initially, we gather requirements from clients via virtual meetings.
+      - Following that, we provide a quote for our services.
+      - If everything aligns, we proceed with the recruitment process within a mutually agreed timeline.`,
       isOpen: false,
     },
     {
       key: 2,
-      title: "What to do after my application is successful?",
-      data: `Cosby sweater plaid shabby chic kitsch pour-over ex. Try-hard fanny pack mumblecore cornhole cray scenester. Assumenda narwhal occupy, Blue Bottle nihil culpa fingerstache. Meggings kogi vinyl meh, food truck banh mi Etsy magna 90’s duis typewriter banjo organic leggings Vice.`,
+      title: "What industries or job categories do you serve?",
+      data: ` - We cater to all industries and a wide array of job categories, leveraging our available resources and expertise.
+      `,
       isOpen: false,
     },
     {
       key: 3,
-      title: "Why is my application stuck on pending?",
-      data: `Cosby sweater plaid shabby chic kitsch pour-over ex. Try-hard fanny pack mumblecore cornhole cray scenester. Assumenda narwhal occupy, Blue Bottle nihil culpa fingerstache. Meggings kogi vinyl meh, food truck banh mi Etsy magna 90’s duis typewriter banjo organic leggings Vice.`,
+      title: "Do you charge for your service?",
+      data: `- Yes, we offer our services at an affordable charge.`,
       isOpen: false,
     },
     {
       key: 4,
-      title: "Can i unsubscribe from your newsletter?",
-      data: `Cosby sweater plaid shabby chic kitsch pour-over ex. Try-hard fanny pack mumblecore cornhole cray scenester. Assumenda narwhal occupy, Blue Bottle nihil culpa fingerstache. Meggings kogi vinyl meh, food truck banh mi Etsy magna 90’s duis typewriter banjo organic leggings Vice.`,
+      title: "How can a company or individual get started with your services?",
+      data: ` - To get started with our services, simply reach out to us with your requirements, and we'll guide you through the process.`,
       isOpen: false,
     },
   ]);
