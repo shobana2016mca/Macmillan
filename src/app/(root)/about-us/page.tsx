@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Countup from "react-countup";
+import Testimonial from "@/components/home/testimonial";
 
 export default function AboutUs() {
   return (
@@ -257,18 +258,71 @@ PROFILES</p>
         {/* <div className="bg-gray-200 p-4">Column 2</div>
   <div className="bg-gray-200 p-4">Column 3</div>
    */}
+
+ 
       </div>
-
-      {/* <div className="flex items-center bg-gray-200 rounded-lg p-4 border border-gray-300 shadow-gray-500">
-  <div className="mr-4">
-  <Image src={"/About-Icon-1.png"}  height={80} width={80} alt="img"/>
+<div className="flex flex-wrap justify-center bg-gray-300 p-6">
+    <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 p-4">
+ <div className="flex items-center rounded-lg p-2  border-gray-300 shadow-gray-500">
+  <div className="mr-2 bg-white rounded-full">
+  <Image src={"/About-Counter-Icon1.png"}  height={120} width={120} alt="img"/>
   </div>
-  <div>
-    <p className="text-lg font-semibold">Your Text Here</p>
-    <p className="text-sm text-gray-500">Additional Description</p>
+  <div className="p-4">
+     <Countup end={1875} duration={4} className="text-5xl font-semibold text-[#4e007a]"/>
+    <p className="text-lg text-center text-black-500 font-semibold">Candidates</p>
+  
   </div>
-</div> */}
+</div>
+    </div>
+  <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 p-4">
+         <div className="flex items-center rounded-lg p-2  border-gray-300 shadow-gray-500">
+  <div className="mr-2 bg-white rounded-full">
+  <Image src={"/About-Counter-Icon3.png"}  height={120} width={120} alt="img"/>
+  </div>
+  <div className="p-4">
+     <Countup end={2500} duration={4} className="text-5xl font-semibold text-[#4e007a]"/>
+    <p className="text-lg text-center text-black-500 font-semibold">Applications</p>
+  
+  </div>
+</div>
+    </div>
+    <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 p-4">
+           <div className="flex items-center rounded-lg p-2  border-gray-300 shadow-gray-500">
+  <div className="mr-2 bg-white rounded-full">
+  <Image src={"/About-Counter-Icon3.png"}  height={120} width={120} alt="img"/>
+  </div>
+  <div className="p-4">
+     <Countup end={999} duration={4} className="text-5xl font-semibold text-[#4e007a]"/>
+    <p className="text-lg text-center text-black-500 font-semibold">Jobs Posted</p>
+  
+  </div>
+</div>
+    </div>
+    <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 p-4">
+             <div className="flex items-center rounded-lg p-2  border-gray-300 shadow-gray-500">
+  <div className="mr-2 bg-white rounded-full">
+  <Image src={"/About-Counter-Icon4.png"}  height={120} width={120} alt="img"/>
+  </div>
+  <div className="p-4">
+     <Countup end={999} duration={4} className="text-5xl font-semibold text-[#4e007a]"/>
+    <p className="text-lg text-center text-black-500 font-semibold">Employed</p>
+  </div>
+</div>
+    </div>
+</div>
+<section className="max-w-7xl mx-auto my-10">
+        <h1 className="text-5xl text-center font-bold text-[#4e007a]">
+        Testimonials
+        </h1>
 
+        <Testimonial />
+      </section>
+
+      <div className="bg-[#4e007a] py-8 px-4 text-center pt-6">
+    <h2 className="text-white text-2xl font-bold mb-4">HAVE A QUESTION?</h2>
+    <p className="text-white mb-4 p-4">We are here to help. Email us or call +44 534 643 2544</p>
+    <button className="border-2 text-white font-extrabold font-6xl py-2 px-8 rounded-lg">CONTACT US</button>
+</div>
 
     </div>
   );
