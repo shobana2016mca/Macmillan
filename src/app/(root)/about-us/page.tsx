@@ -18,10 +18,7 @@ export default function AboutUs() {
               <h1 className="text-5xl font-bold">About us</h1>
             </div>
 
-            <div className="flex items-center gap-4 justify-center mt-4">
-              <Countup end={999} duration={4} className="text-2xl" />
-              <Countup end={999} duration={4} className="text-2xl" />
-            </div>
+        
           </div>
         </div>
 
@@ -39,7 +36,7 @@ export default function AboutUs() {
   <div className="row-end-3 row-span-2">02</div>
   
 </div> */}
-      <div className="flex flex-wrap items-center p-8">
+      <div className="flex flex-wrap items-center p-10">
         <div className="w-full md:w-1/2 p-4">
           <h2 className="text-xl md:text-3xl lg:text-3xl font-bold mb-4">
             About Macmillan HR

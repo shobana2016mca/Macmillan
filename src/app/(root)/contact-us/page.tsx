@@ -55,6 +55,7 @@ WC1B 2JR</p></div>
         </div>
     </div>
 </div>
+
     </div>
   );
 }
