@@ -75,7 +75,22 @@ export default function ContactUs() {
             </div>
           </div>
         </div>
+<<<<<<< HEAD
       </div>
+=======
+        <div className="md:w-1/4 sm:w-1/2 p-4 bg-[#4e007a]">
+        
+        <p className="text-white text-3xl text-center font-semibold py-6 px-12">Upload Your CV</p>
+<p className="text-white text-lg text-center px-10 mb-10">Upload your CV to apply for as many jobs as you like.</p>
+<button className="bg-white text-[#4e007a] font-bold text-sm py-2 px-4 ml-16 rounded-lg"><a href="#">UPLOAD YOUR CV</a></button>
+<div className="relative h-32 w-32">
+  <div className="absolute bottom-0 ml-56 h-16 w-16"><Image src={"/cv.png"}  height={700} width={600} alt="img"/></div>
+</div>
+        </div>
+    </div>
+</div>
+
+>>>>>>> 537d1155fb860e11ff2a61beff749b9a80c2dc4f
     </div>
   );
 }
