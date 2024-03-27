@@ -3,6 +3,7 @@
 import Contact from '@/models/Contact';
 import { connectDB } from './connectDB';
 import { actionResponse } from './helpers';
+import { sendMail } from './nodemailer';
 
 export async function createContact(formData: any) {
   try {
@@ -22,13 +23,19 @@ export async function createContact(formData: any) {
     // console.log(firstName, lastName, email, message);
 
     // create contact
-    await Contact.create({
+    const contact = await Contact.create({
       firstName,
       lastName,
       email,
       message,
     });
 
+    // send email to admin
+    const result = await sendMail(
+      { subject: firstName + lastName, text: message, html: '' },
+      contact.email
+    );
+    console.log('', result);
     // return response
     return actionResponse('success', 'Contact created', null);
   } catch (err) {

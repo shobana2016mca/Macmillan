@@ -1,6 +1,7 @@
 'use client';
 
 import { useScreensize } from '@/hooks/useScreensize';
+import { useAuth, UserButton } from '@clerk/nextjs';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -9,6 +10,8 @@ import { IoMdClose } from 'react-icons/io';
 import Sidebar from './Sidebar';
 
 export default function Navbar() {
+  const { isSignedIn, signOut, userId } = useAuth();
+
   const { isMobile } = useScreensize();
 
   const [open, setOpen] = useState(false);
@@ -239,6 +242,10 @@ export default function Navbar() {
               </div>
             ) : null}
           </div>
+
+          {isSignedIn && (
+            <UserButton afterSignOutUrl='/' afterSwitchSessionUrl='/' />
+          )}
 
           <div className='hover:text-blue-500 flex items-center gap-2 transition-all duration-300 cursor-pointer relative'>
             {!isMobile && <span className='text-sm'>JOB BASKET</span>}
